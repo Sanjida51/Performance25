@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+/* header part*/
+.header{
+    text-align: center;
+    background: darkslategrey;
+    padding: 32px;
+    color: white;
+}
+/* TopNav PART*/
+.topnav{
+    overflow: hidden;
+    background-color: darkgray;
+}
+.topnav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 13px 14px;
+    float: left;
+}
+.topnav #right{
+    float: right;
+    background-color: red;
+    color: #fff;
+}
+/*topnav hover part */
+.topnav a:hover{
+    background-color: black;
+    color: #fff;
+}
+.topnav #right:hover{
+    background-color: green;
+}
+
+/* navbar done */
+/* row Part start */
+.leftcol{
+    margin-top: 20px;
+    float: left;
+    width: 72%;
+    background-color: #a2c0db;
+}
+
+.forimg{
+    background-color: cadetblue;
+    padding: 20px;
+    width: 100%;
+}
+
+.card{
+    padding: 10px;
+    margin-top: 25px;
+    background-color: #c8dbf8;
+}
+
+.rightcol{
+    
+    float: left;
+    width: 25%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 20px;
+    background-color: darkgray;
+    text-align: center;
+    width: 100%;
+}
+/*Responsive layout when device screen size is 800px wide,will converted inti two col */
+@media screen and (max-width: 850px) {
+    .leftcol, .rightcol {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+/*for 400px */
+@media screen and (max-width:400px){
+    .topNav a{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+/*specificity value*/
+p{
+    color: blue;
+}
+#first{
+    color: red;
+}
+div .test{
+    color: lawngreen;
+}
+div.main p.test{
+    color: green;
+}
+.round{
+    height: 150px;
+    width: 150px;
+    border: 2px solid #1616f8;
+    background-color: darkred;
+    border-radius: 50%;
+}
